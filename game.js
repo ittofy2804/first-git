@@ -4,8 +4,8 @@ const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 let intentos = 0;
 let adivinanza = 0;
 
-console.log("🎯 Adivina el número entre 1 y 100");
-console.log("Pista: si estás cerca diré 'caliente', si estás lejos diré 'frío'");
+console.log("🎯 Bienvenido al juego: Adivina el número secreto");
+console.log("Te daré pistas: 'Caliente' si estás cerca, 'Frío' si estás lejos");
 
 while (adivinanza !== numeroSecreto) {
     adivinanza = parseInt(prompt("Escribe tu número: "));

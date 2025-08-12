@@ -9,6 +9,10 @@ console.log("Te daré pistas: 'Caliente' si estás cerca, 'Frío' si estás lejo
 
 while (adivinanza !== numeroSecreto) {
     adivinanza = parseInt(prompt("Escribe tu número: "));
+    if (isNaN(adivinanza) || adivinanza < 1 || adivinanza > 100) {
+    console.log("⚠️ Por favor ingresa un número válido entre 1 y 100");
+    continue;
+    }
     intentos++;
 
     if (adivinanza === numeroSecreto) {

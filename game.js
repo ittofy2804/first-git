@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
+let rangoMaximo = parseInt(prompt("Elige el rango máximo (por defecto 100): ")) || 100;
+const numeroSecreto = Math.floor(Math.random() * rangoMaximo) + 1;
 
-const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 let intentos = 0;
 let adivinanza = 0;
 

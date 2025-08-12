@@ -19,6 +19,10 @@ while (adivinanza !== numeroSecreto) {
         console.log(`🎉 ¡Acertaste en ${intentos} intentos!`);
         break;
     }
+    if (intentos >= 10) {
+    console.log(`❌ Has perdido. El número secreto era ${numeroSecreto}`);
+    break;
+    }
 
     let diferencia = Math.abs(adivinanza - numeroSecreto);
     if (diferencia <= 10) {
